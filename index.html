@@ -3,42 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Benim Web Sitem</title>
+  <title>MeritKing | Hoş Geldin</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
     }
+
     h1 {
       font-size: 3em;
+      margin-bottom: 20px;
     }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
     button {
+      background-color: white;
+      color: #0072ff;
       padding: 15px 30px;
-      font-size: 16px;
-      background-color: #fff;
-      color: #4facfe;
+      font-size: 1em;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
+
     button:hover {
-      background-color: #f0f0f0;
+      background-color: #e6e6e6;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #dcdcdc;
     }
   </style>
 </head>
 <body>
-  <h1>Hoşgeldin! 🌐</h1>
-  <p>Bu tamamen ücretsiz ve dinamik bir site.</p>
-  <button onclick="showMessage()">Tıkla Bakalım 👀</button>
+
+  <h1>Hoşgeldin MeritKing! 👑</h1>
+  <p>Bu tamamen ücretsiz bir web sitesidir!</p>
+  <button onclick="gosterMesaj()">Bana Tıkla 🎯</button>
+
+  <footer>
+    © 2025 Tüm Hakları Saklıdır.
+  </footer>
 
   <script>
-    function showMessage() {
-      alert("JavaScript başarıyla çalıştı! 🎉");
+    function gosterMesaj() {
+      alert("JavaScript başarılı şekilde çalışıyor! 🚀");
     }
   </script>
+
 </body>
 </html>
